@@ -1,0 +1,27 @@
+#include<iostream>
+#include<cstring>
+using namespace std;
+
+class A{
+
+
+	};
+
+class B{
+	friend class A;
+	// A is a friendclass of B
+	// all the members of B can be accessed from A
+	// when a class is declared friend, its all functions become friend functions.
+	// but we cannot access members of A from B
+	// thus, here, all private/protected members of B can e accessed by A
+	// friendship here is Granted. NOT MUTUAL. 
+	// freindship is not inherited
+	// friend concept is not in JAVA
+	
+};
+
+int main()
+
+{
+	return 0;
+}
