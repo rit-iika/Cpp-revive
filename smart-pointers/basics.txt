@@ -1,0 +1,30 @@
+dynamic memory is memeory created on heap,
+it needs to be deleted by us.
+smart pointers are pointers which can destroy themselves and thus
+no delete statement needs to be written for it.
+
+smart pointers are of 3 kinds:
+1. unique_ptr
+2. shared_ptr
+3. weak pointers
+
+1. shared pointers
+are pointers used to refer the same location
+they use reference-counts concept, to track the number of counts. 
+when this reference counter value == 0, then memeory is freed or deleted.
+
+shared_ptr<int>ptr1;
+shared_ptr<int>ptr2;
+
+
+2. unique pointers
+are pointers used to refer to only 1 location
+no other variable/pointer can refer to this location
+when unique pointer is destroyed, memory gets free
+
+unique_ptr<int> ptr1;
+
+3. weak pointer
+are pointers similar to shared pointers
+they just donot maintain/increment the reference count thus
+they are called weak
