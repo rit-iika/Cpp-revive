@@ -1,0 +1,8 @@
+Lists
+
+std::list is a container that supports constant time insertion and removal of elements from anywhere in the container.
+Fast random access is not supported. It is usually implemented as a doubly-linked list.
+
+list<int> numbers={1,2,3,332,12};
+list<int> numb {32,2,9,79,0};
+list<char> chars {'a', 'g', 'y', 'o'};
