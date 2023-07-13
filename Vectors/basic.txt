@@ -1,0 +1,13 @@
+Vectors
+
+The elements are stored contiguously, which means that elements can be accessed not only through iterators,
+but also using offsets to regular pointers to elements. This means that a pointer to an element of a vector may be passed to any function
+that expects a pointer to an element of an array.
+
+Vectors usually occupy more space than static arrays, because more memory is allocated to handle future growth. 
+
+The complexity (efficiency) of common operations on vectors is as follows:
+Random access - constant O(1)
+Insertion or removal of elements at the end - amortized constant O(1)
+Insertion or removal of elements - linear in the distance to the end of the vector O(n)
+
