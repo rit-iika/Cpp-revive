@@ -1,0 +1,22 @@
+sets
+
+1. sets are data structues used to store unique elements
+2. duplicate elemenst are not stored in sets.
+3. addition/del of elements is possible, Modification is not.
+4. set is sorted by default
+5. all ops = O(log n)
+6. Implementation
+set is a implementation of a self-balancing BST.
+like red black tree.
+7. traversal in trees is done through Iterators. 
+
+
+set<int> s;    //normal set declaration
+set<int, greater<int>> s ; //store elemnts in reverse order
+
+
+UnOrdered set
+
+1. Implementation is done using hashtable
+2. sorted order is not here
+3. all ops = O(1) avg case, O(n) worst case
