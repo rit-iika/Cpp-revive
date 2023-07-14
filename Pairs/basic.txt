@@ -1,0 +1,10 @@
+Pairs
+
+1. these are data structures used to contain pair of objects, 
+2. <int,int>, <int,char>, <int, float> any combination of pair works here.
+3. it is a STL container, to store pair of values.
+
+pair <int,char> p;
+p.first=12;
+p.second='a';
+
