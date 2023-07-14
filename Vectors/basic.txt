@@ -1,4 +1,6 @@
 Vectors
+. as many number of elements could be added
+. size can be modified. 
 
 The elements are stored contiguously, which means that elements can be accessed not only through iterators,
 but also using offsets to regular pointers to elements. This means that a pointer to an element of a vector may be passed to any function
@@ -10,4 +12,8 @@ The complexity (efficiency) of common operations on vectors is as follows:
 Random access - constant O(1)
 Insertion or removal of elements at the end - amortized constant O(1)
 Insertion or removal of elements - linear in the distance to the end of the vector O(n)
+
+#include<vector>
+vector<int>v;
+
 
